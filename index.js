@@ -10,7 +10,7 @@ app.get('/die-or-rage', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-  res.render(__dirname + '/index.html')
+  res.redirect('http://prototype-games.github.io/')
 })
 
 app.listen(app.get('port'), function () {
