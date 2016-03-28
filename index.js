@@ -12,7 +12,7 @@ app.get('/die-or-rage-nm',
   (req, res) => res.render(__dirname + '/die-or-rage-nm/index.html'))
 
 app.get('/',
-  (req, res) => res.redirect('http://prototype-games.github.io/'))
+  (req, res) => res.redirect('http://atoiks-games.github.io'))
 
 app.listen(app.get('port'),
   () => console.log('Node app is running on port ' + app.get('port')))
