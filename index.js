@@ -20,7 +20,9 @@ app.get('/snark',
 app.get('/',
 	(req, res) => res.redirect('http://atoiks-games.github.io'))
 
-app.use((req, res) => res.status(404).send('The page you are trying to navigate to cannot be found! Click <a href="/">here</a> to return to homepage'));
+app.use((req, res) => res.status(404).send('<em>The page you are trying to navigate to cannot be found! Click <a href="/">here</a> to return to homepage.</em>'));
+
+app.use((req, res) => res.status(500).send('<em>Something went wrong! Click <a href="/">here</a> to return to homepage.</em>'));
 
 app.listen(app.get('port'),
 	   () => console.log('Node app is running on port ' + app.get('port')))
