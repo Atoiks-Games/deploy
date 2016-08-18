@@ -6,16 +6,19 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname))
 
 app.get('/die-or-rage',
-  (req, res) => res.render(__dirname + '/die-or-rage/index.html'))
+	(req, res) => res.render(__dirname + '/die-or-rage/index.html'))
 
 app.get('/die-or-rage-nm',
-  (req, res) => res.render(__dirname + '/die-or-rage-nm/index.html'))
+	(req, res) => res.render(__dirname + '/die-or-rage-nm/index.html'))
 
 app.get('/Jarg',
-  (req, res) => res.render(__dirname + '/Jarg/index.html'))
+	(req, res) => res.render(__dirname + '/Jarg/index.html'))
+
+app.get('/snark',
+	(req, res) => res.render(__dirname + '/snark/index.html'))
 
 app.get('/',
-  (req, res) => res.redirect('http://atoiks-games.github.io'))
+	(req, res) => res.redirect('http://atoiks-games.github.io'))
 
 app.listen(app.get('port'),
-  () => console.log('Node app is running on port ' + app.get('port')))
+	   () => console.log('Node app is running on port ' + app.get('port')))
