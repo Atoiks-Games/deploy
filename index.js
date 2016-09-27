@@ -17,6 +17,9 @@ app.get('/Jarg',
 app.get('/snark',
 	(req, res) => res.render(__dirname + '/snark/index.html'))
 
+app.get('/balance',
+        (req, res) => res.render(__dirname + '/balance/index.html/'))
+
 app.get('/',
 	(req, res) => res.redirect('http://atoiks-games.github.io'))
 
