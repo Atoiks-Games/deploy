@@ -4,34 +4,20 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 
 app.use(express.static('public'))
-/*
-app.get('/die-or-rage', function (req, res) {
-	res.sendFile(__dirname + '/die-or-rage/index.html')
+
+app.get('/', function (req, res) {
+	res.redirect('http://atoiks-games.github.io')
 })
 
-app.get('/die-or-rage-nm', function (req, res) {
-	res.sendFile(__dirname + '/die-or-rage-nm/index.html')
+app.use(function (req, res) {
+	res.status(404)
+	   .send('<em>The page you are trying to navigate to cannot be found! Click <a href="/">here</a> to return to homepage.</em>')
 })
 
-app.get('/jarg-1',
-	(req, res) => res.render(__dirname + '/jarg-1/index.html'))
-
-app.get('/jarg-2',
-	(req, res) => res.render(__dirname + '/jarg-2/index.html'))
-
-app.get('/snark',
-	(req, res) => res.render(__dirname + '/snark/index.html'))
-
-app.get('/balance',
-	(req, res) => res.render(__dirname + '/balance/index.html'))
-
-app.get('/',
-	(req, res) => res.redirect('http://atoiks-games.github.io'))
-
-app.use((req, res) => res.status(404).send('<em>The page you are trying to navigate to cannot be found! Click <a href="/">here</a> to return to homepage.</em>'));
-
-app.use((req, res) => res.status(500).send('<em>Something went wrong! Click <a href="/">here</a> to return to homepage.</em>'));
-*/
+app.use(function (req, res) {
+	res.status(500)
+	   .send('<em>Something went wrong! Click <a href="/">here</a> to return to homepage.</em>')
+})
 
 app.listen(app.get('port'), function () {
 	console.log('Node app is running on port ' + app.get('port'))
