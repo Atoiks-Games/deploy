@@ -3,6 +3,8 @@ var app = express()
 
 app.set('port', (process.env.PORT || 5000))
 
+app.use(express.static('public'))
+/*
 app.get('/die-or-rage', function (req, res) {
 	res.sendFile(__dirname + '/die-or-rage/index.html')
 })
@@ -11,7 +13,6 @@ app.get('/die-or-rage-nm', function (req, res) {
 	res.sendFile(__dirname + '/die-or-rage-nm/index.html')
 })
 
-/*
 app.get('/jarg-1',
 	(req, res) => res.render(__dirname + '/jarg-1/index.html'))
 
