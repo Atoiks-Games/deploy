@@ -12,7 +12,7 @@ app.get('/die-or-rage-nm',
 	(req, res) => res.render(__dirname + '/die-or-rage-nm/index.html'))
 
 app.get('/jarg',
-	(req, res) => res.render(__dirname + '/jarg/index.html'))
+	(req, res) => res.render(__dirname + '/jarg-1/index.html'))
 
 app.get('/jarg-2',
 	(req, res) => res.render(__dirname + '/jarg-2/index.html'))
