@@ -12,14 +12,16 @@ app.get('/die-or-rage-nm',
 app.get('/jarg-1',
 	(req, res) => res.render(__dirname + '/jarg-1/index.html'))
 
+/*
 app.get('/jarg-2',
 	(req, res) => res.render(__dirname + '/jarg-2/index.html'))
+*/
 
 app.get('/snark',
 	(req, res) => res.render(__dirname + '/snark/index.html'))
 
 app.get('/balance',
-	(req, res) => res.render(__dirname + '/balance/index.html/'))
+	(req, res) => res.render(__dirname + '/balance/index.html'))
 
 app.get('/',
 	(req, res) => res.redirect('http://atoiks-games.github.io'))

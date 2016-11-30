@@ -1,11 +1,11 @@
 {
-	"name": "Die-Or-Rage",
+	"name": "atoiks-games-suit",
 	"dependencies": {
 		"express": "latest"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Prototype-Games/deploy.git"
+		"url": "https://github.com/Atoiks-Games/deploy.git"
 	},
 	"url": "http://atoiks-games.github.io/"
 }
