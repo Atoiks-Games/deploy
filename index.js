@@ -9,6 +9,10 @@ app.get('/', function (req, res) {
 	res.redirect('http://atoiks-games.github.io')
 })
 
+app.get('/pharah-system', function (req, res) {
+	res.download('/pharah-system.zip', 'pharah-system.zip');
+})
+
 app.use(function (req, res) {
 	res.status(404)
 	   .send('<em>The page you are trying to navigate to cannot be found! Click <a href="/">here</a> to return to homepage.</em>')
