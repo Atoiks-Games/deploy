@@ -1,5 +1,8 @@
 {
 	"name": "atoiks-games-suit",
+	"engines": {
+		"node": "6.11.1"
+	},
 	"dependencies": {
 		"express": "latest"
 	},
