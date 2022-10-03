@@ -1,7 +1,5 @@
 # deploy
 
-The heroku deployment repo
+Used to be the repo for heroku deployment.
+We migrated to GitHub pages.
 
-You really are not supposed to be here...
-
-### NOTE: ANY PR's HERE WILL NOT BE MERGED!
